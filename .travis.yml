@@ -1,6 +1,9 @@
 addons:
   chrome: stable
 
+install:
+  - npm install
+
 script:
   - echo "Add script to pack chrome extension"
   - npm test
