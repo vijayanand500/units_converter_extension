@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - 7
+  - 12
 addons:
   chrome: stable
 install:
-  - npm install mocha
+  - npm install
 script:
   - echo "Add script to pack chrome extension"
   - npm test
