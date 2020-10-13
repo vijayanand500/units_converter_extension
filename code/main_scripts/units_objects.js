@@ -109,6 +109,11 @@ const UNITS = [
         aliases: ["franc","francs","CHF"]
     },
     {
+        unit: "CNY",
+        type: "currency",
+        aliases: ["cny", "chinese yuan", "yuan", "¥"]
+    },
+    {
         unit: "meters",
         type: "length",
         aliases: ["meter", "meters", "m", "mts"]

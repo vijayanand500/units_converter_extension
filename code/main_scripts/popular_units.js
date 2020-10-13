@@ -8,7 +8,7 @@ const POPULAR_UNITS = {
     "length": ["meters", "miles", "kilometers", "centimeters", "millimeters", "yard", "feet", "inch", "furlong", "chain"],
     "mass": ["grams", "kilograms", "pounds", "ounces", "tonnes", "ton", "milligrams", "micrograms"],
     "temperature": ["celcius", "fahrenheit", "kelvin"],
-    "currency": ["usd", "eur", "gbp", "inr", "jpy", "cad","aud","chf"],
+    "currency": ["usd", "eur", "gbp", "inr", "jpy", "cad","aud","chf", "cny"],
     "time": ["seconds", "minutes", "hours", "days", "weeks"],
 }
 

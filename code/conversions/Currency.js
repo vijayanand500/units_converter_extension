@@ -53,6 +53,11 @@ class Currency {
                     return d['USD']
                 })
                 return rate * quantity
+            case "cny":
+                rate = await this.getData('CNY').then(function (d) {
+                    return d['CNY']
+                })
+                return rate * quantity
             default:
                 return null
 
@@ -111,6 +116,11 @@ class Currency {
                     })
                     res += ",Fr " + getPreciseNumber(factor * quantity, precision)
                     break
+                case "cny":
+                    factor = await this.getData('USD').then(function (d) {
+                        return d['CNY']
+                    })
+                    res += ",¥ " + getPreciseNumber(factor * quantity, precision)
             }
         }
         return res
