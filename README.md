@@ -8,6 +8,7 @@ An extension that converts your selected values into popular units. Saves time, 
 ![GitHub contributors](https://img.shields.io/github/contributors/NCSU-S/units_converter_extension)
 [![Build Status](https://travis-ci.com/NCSU-S/units_converter_extension.svg?branch=master)](https://travis-ci.com/NCSU-S/units_converter_extension)
 [![Coverage Status](https://coveralls.io/repos/github/NCSU-S/units_converter_extension/badge.svg?branch=master)](https://coveralls.io/github/NCSU-S/units_converter_extension?branch=master)
+[![DOI](https://zenodo.org/badge/300009632.svg)](https://zenodo.org/badge/latestdoi/300009632)
 
 Click on the image below to preview the working of the extension<br/>
 [![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
