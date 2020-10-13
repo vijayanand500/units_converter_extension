@@ -12,6 +12,13 @@ An extension that converts your selected values into popular units. Saves time, 
 Click on the image below to preview the working of the extension<br/>
 [![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
 
+## Use Cases
+- Convert $ to ¥ when you are shopping abroad
+- Convert kilometers to miles when you are planning routes before driving
+- Convert kilograms to pounds when you are buying food
+- Convert celcius to fahrenheit when you are talking about weather
+- Convert hours to seconds when you are calculating time
+
 ## Installation 
 
 - Clone the repository using ```git clone https://github.com/bhavesh242/units_converter_extension```
