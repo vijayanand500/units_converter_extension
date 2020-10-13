@@ -3,3 +3,4 @@ addons:
 
 script:
   - echo "Add script to pack chrome extension"
+  - npm test
