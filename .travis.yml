@@ -8,3 +8,4 @@ install:
 script:
   - echo "Add script to pack chrome extension"
   - npm test
+after_success: npm run coverage
