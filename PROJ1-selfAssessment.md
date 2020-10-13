@@ -36,15 +36,15 @@
 || Extensive use of code coverage |0|
 || other automated analysis tools|0|
 || Extensive use of  other automated analysis tools|0|
-|| test cases exist|0|
-|| test cases are routinely executed|0|
+|| test cases exist|4|
+|| test cases are routinely executed|2|
 | consensus-oriented model| the files CONTRIBUTING.md and CODEOFCONDUCT.md has have multiple edits by multiple people|4|
 | | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|4|
 | | multiple people contribute to discussions|4|
 || issues are discussed before they are closed|4|
 || Chat channel: exists|4|
 || Chat channel: is active |4|
-|| test cases:.a large proportion of the issues related to handling failing cases.|0|
+|| test cases:.a large proportion of the issues related to handling failing cases.|2|
 | zero internal boundaries | evidence that the whole team is using the same tools: everyone can get to all tools and files|4|
 | | evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|4|
 | | evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|4|
