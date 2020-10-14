@@ -1,5 +1,3 @@
-const fetch = require("node-fetch");
-
 //Our currency class handles all currency related conversions
 class Currency {
     constructor(unit, arr) {
@@ -25,6 +23,7 @@ class Currency {
 
     //api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD
     getData(q) {
+        let fetch = require("node-fetch");
         return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
             .then(response => response.json())
             .then(data => data.rates)
