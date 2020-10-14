@@ -6,6 +6,22 @@ class Length {
         this.arr = arr;
     }
 
+    getPrecision(number) {
+        let parts = number.toString().split(".");
+        if (parts.length <= 1) {
+            return number < 0 ? parts[0].length - 1 : parts[0].length;
+        }
+        let intlen = number < 0 ? parts[0].length - 1 : parts[0].length;
+        return intlen + parts[1].length;
+    }
+    
+    
+    getPreciseNumber(number, precision) {
+        return number.toPrecision(
+            Math.min(Math.max(this.getPrecision(number), precision), 10)
+        );
+    }
+
     //Our standard conversion is meters, so we try to convert all selection to meters
     getStandardConversion(quantity) {
         //We use a switch case to make appropriate conversion
@@ -32,52 +48,52 @@ class Length {
         this.arr.forEach((u) => {
             switch (u.toLowerCase()) {
                 case "meters": {
-                    res += "," +getPreciseNumber(quantity,precision) + " m"; 
+                    res += "," +this.getPreciseNumber(quantity,precision) + " m"; 
                     break;
                 }
                 case "miles": {
                     let conv = quantity / 1609;
-                    res += "," + getPreciseNumber(conv, precision) + " mi";
+                    res += "," + this.getPreciseNumber(conv, precision) + " mi";
                     break;
                 }
                 case "kilometers": {
                     let conv = quantity / 1000;
-                    res += ","+ getPreciseNumber(conv, precision) + " km";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " km";
                     break;
                 }
                 case "centimeters": {
                     let conv = quantity * 100;
-                    res += ","+ getPreciseNumber(conv, precision) + " cm";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " cm";
                     break;
                 }
                 case "millimeters": {
                     let conv = quantity * 1000;
-                    res += ","+ getPreciseNumber(conv, precision) + " mm";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " mm";
                     break;
                 }
                 case "yard": {
                     let conv = quantity * 1.09361;
-                    res += ","+ getPreciseNumber(conv, precision) + " yd";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " yd";
                     break;
                 }
                 case "feet": {
                     let conv = quantity * 3.28084;
-                    res += ","+ getPreciseNumber(conv, precision) + " ft";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " ft";
                     break;
                 }
                 case "inch": {
                     let conv = quantity * 39.3701;
-                    res += ","+ getPreciseNumber(conv, precision) + " inch";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " inch";
                     break;
                 }
                 case "furlong": {
                     let conv = quantity / 201;
-                    res += ","+ getPreciseNumber(conv, precision) + " fur";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " fur";
                     break;
                 }
                 case "chain": {
                     let conv = quantity / 20.117;
-                    res += ","+ getPreciseNumber(conv, precision) + " chain";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " chain";
                     break;
                 }
             }
@@ -88,3 +104,5 @@ class Length {
 
 
 }
+
+module.exports = Length
