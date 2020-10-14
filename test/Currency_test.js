@@ -20,18 +20,20 @@ describe("Currency", function () {
         assert.notStrictEqual(res, "");
     });
 
-    it("Standard Conversions should not be empty", function () {
-        let res = usd.getStandardConversion(30);
+    it("Standard Conversions should not be empty", async function () {
+        let res = await usd.getStandardConversion(30);
         assert.notStrictEqual(res, 0);
     });
 
     let eur = new Currency("EUR", ["usd", "eur", "gbp", "inr", "jpy", "cad","aud","chf", "cny"]);
     it("Conversions in EUR", function () {
-        assert.notStrictEqual(eur.getAllConversions(49.94, 2), "");
+        let res = eur.getAllConversions(49.94, 2);
+        assert.notStrictEqual(res, "");
     }
     );
-    it("Standard Conversions in EUR", function () {
-        assert.notStrictEqual(eur.getStandardConversion(30), "");
+    it("Standard Conversions in EUR", async function () {
+        let res = await eur.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -40,8 +42,9 @@ describe("Currency", function () {
         assert.notStrictEqual(gbp.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in GBP", function () {
-        assert.notStrictEqual(gbp.getStandardConversion(30), "");
+    it("Standard Conversions in GBP", async function () {
+        let res = await gbp.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -50,8 +53,9 @@ describe("Currency", function () {
         assert.notStrictEqual(inr.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in INR", function () {
-        assert.notStrictEqual(inr.getStandardConversion(30), "");
+    it("Standard Conversions in INR", async function () {
+        let res = await inr.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -60,8 +64,9 @@ describe("Currency", function () {
         assert.notStrictEqual(jpy.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in JPY", function () {
-        assert.notStrictEqual(jpy.getStandardConversion(30), "");
+    it("Standard Conversions in JPY", async function () {
+        let res = await jpy.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -70,8 +75,9 @@ describe("Currency", function () {
         assert.notStrictEqual(cad.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in CAD", function () {
-        assert.notStrictEqual(cad.getStandardConversion(30), "");
+    it("Standard Conversions in CAD", async function () {
+        let res = await cad.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -80,8 +86,9 @@ describe("Currency", function () {
         assert.notStrictEqual(aud.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in AUD", function () {
-        assert.notStrictEqual(aud.getStandardConversion(30), "");
+    it("Standard Conversions in AUD", async function () {
+        let res = await aud.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -90,8 +97,9 @@ describe("Currency", function () {
         assert.notStrictEqual(chf.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in CHF", function () {
-        assert.notStrictEqual(chf.getStandardConversion(30), "");
+    it("Standard Conversions in CHF", async function () {
+        let res = await chf.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
@@ -100,8 +108,9 @@ describe("Currency", function () {
         assert.notStrictEqual(cny.getAllConversions(49.94, 2), "");
     }
     );
-    it("Standard Conversions in CNY", function () {
-        assert.notStrictEqual(cny.getStandardConversion(30), "");
+    it("Standard Conversions in CNY", async function () {
+        let res = await cny.getStandardConversion(30)
+        assert.notStrictEqual(res, "");
     }
     );
 
