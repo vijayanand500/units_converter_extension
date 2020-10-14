@@ -21,9 +21,8 @@ describe("Currency", function () {
         assert.notStrictEqual(usd.getStandardConversion(30), "");
     });
 
-    
+    let eur = new Currency("EUR", ["usd", "gbp", "inr", "jpy", "cad", "aud", "chf"]);
     it("Conversions in EUR", function () {
-        let eur = new Currency("EUR", ["usd", "gbp", "inr", "jpy", "cad", "aud", "chf"]);
         assert.notStrictEqual(eur.getAllConversions(49.94, 2), "");
     }
     );
@@ -51,7 +50,7 @@ describe("Currency", function () {
         assert.notStrictEqual(inr.getStandardConversion(30), "");
     }
     );
-    
+
     let jpy = new Currency("JPY", ["usd", "eur", "gbp", "inr", "cad", "aud", "chf"]);
     it("Conversions in JPY", function () {
         assert.notStrictEqual(jpy.getAllConversions(49.94, 2), "");
@@ -91,7 +90,7 @@ describe("Currency", function () {
         assert.notStrictEqual(chf.getStandardConversion(30), "");
     }
     );
-    
+
 
 
 });
