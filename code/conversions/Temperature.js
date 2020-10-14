@@ -23,15 +23,15 @@ class Temperature {
         let res = "";
         this.arr.forEach((u) => {
             switch (u.toLowerCase()) {
-                case "celcius": res += "," +getPreciseNumber(quantity,precision) + " °C"; break;
+                case "celcius": res += "," + this.getPreciseNumber(quantity,precision) + " °C"; break;
                 case "kelvin": {
                     let conv = quantity + 273.15;
-                    res += "," + getPreciseNumber(conv, precision) + " °K";
+                    res += "," + this.getPreciseNumber(conv, precision) + " °K";
                     break;
                 }
                 case "fahrenheit": {
                     let conv = (quantity / 5) * 9 + 32;
-                    res += ","+ getPreciseNumber(conv, precision) + " °F";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " °F";
                     break;
                 }
             }
@@ -40,5 +40,20 @@ class Temperature {
         return res;
     }
 
+    getPreciseNumber(number, precision){
+        return number.toPrecision(
+            Math.min(Math.max(this.getPrecision(number), precision), 10)
+        );
+    }
 
+    getPrecision(number) {
+        let parts = number.toString().split(".");
+        if (parts.length <= 1) {
+            return number < 0 ? parts[0].length - 1 : parts[0].length;
+        }
+        let intlen = number < 0 ? parts[0].length - 1 : parts[0].length;
+        return intlen + parts[1].length;
+    }
 }
+
+module.exports = Temperature;
