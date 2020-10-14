@@ -5,6 +5,26 @@ class Mass {
         this.arr = arr;
     }
 
+
+    getPrecision(number) {
+        let parts = number.toString().split(".");
+        if (parts.length <= 1) {
+            return number < 0 ? parts[0].length - 1 : parts[0].length;
+        }
+        let intlen = number < 0 ? parts[0].length - 1 : parts[0].length;
+        return intlen + parts[1].length;
+    }
+    
+    
+    getPreciseNumber(number, precision) {
+        return number.toPrecision(
+            Math.min(Math.max(this.getPrecision(number), precision), 10)
+        );
+    }
+
+
+
+
     //Our standard conversion is Kilograms, so we try to convert all selection to Kilograms
     getStandardConversion(quantity) {
         //We use a switch case to make appropriate conversion
@@ -28,40 +48,40 @@ class Mass {
         let res = "";
         this.arr.forEach((u) => {
             switch (u.toLowerCase()) {
-                case "kilograms": res += "," +getPreciseNumber(quantity,precision) + " Kgs"; break;
+                case "kilograms": res += "," +this.getPreciseNumber(quantity,precision) + " Kgs"; break;
                 case "grams": {
                     let conv = quantity * 1000;
-                    res += "," + getPreciseNumber(conv, precision) + " gms";
+                    res += "," + this.getPreciseNumber(conv, precision) + " gms";
                     break;
                 }
                 case "pound": {
                     let conv = quantity * 2.20462262;
-                    res += ","+ getPreciseNumber(conv, precision) + " lbs";
+                    res += ","+ this.getPreciseNumber(conv, precision) + " lbs";
                     break;
                 }
 				case "tonne": {
                     let conv = quantity / 1000;
-                    res += "," + getPreciseNumber(conv, precision) + " tonnes";
+                    res += "," + this.getPreciseNumber(conv, precision) + " tonnes";
                     break;
                 }
 				case "milligrams": {
                     let conv = quantity * 1000000;
-                    res += "," + getPreciseNumber(conv, precision) + " milligrams";
+                    res += "," + this.getPreciseNumber(conv, precision) + " milligrams";
                     break;
                 }
 				case "micrograms": {
                     let conv = quantity * 1000000000;
-                    res += "," + getPreciseNumber(conv, precision) + " micrograms";
+                    res += "," + this.getPreciseNumber(conv, precision) + " micrograms";
                     break;
                 }
 				case "ounces": {
                     let conv = quantity * 35.273962;
-                    res += "," + getPreciseNumber(conv, precision) + " ounces";
+                    res += "," + this.getPreciseNumber(conv, precision) + " ounces";
                     break;
                 }
 				case "ounces": {
                     let conv = quantity / 907.18474;
-                    res += "," + getPreciseNumber(conv, precision) + " tonss";
+                    res += "," + this.getPreciseNumber(conv, precision) + " tonss";
                     break;
                 }
             }
@@ -72,3 +92,5 @@ class Mass {
 
 
 }
+
+module.exports = Mass;
