@@ -1,7 +1,6 @@
 /*
     The following file has all the utility functions that perform trivial yet important tasks
 */
-const POPULAR_UNITS = require('./popular_units')
 
 //This is a sort function used to sort an array of string in descending order of string lengths
 function descending_length(a, b) {
@@ -17,7 +16,7 @@ function matches_filter(currentUnit) {
 }
 
 //For a given unit, this function returns all the popular units that it can be converted into except itself
-module.exports = function get_possible_conversions_list(type, currentUnit) {
+function get_possible_conversions_list(type, currentUnit) {
     return POPULAR_UNITS[type].filter(matches_filter(currentUnit))
 }
 

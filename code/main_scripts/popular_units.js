@@ -4,7 +4,7 @@
     Example : The some popular units for length type are : meters, kilometers, miles
 */
 
-module.exports = POPULAR_UNITS = {
+const POPULAR_UNITS = {
     "length": ["meters", "miles", "kilometers", "centimeters", "millimeters", "yard", "feet", "inch", "furlong", "chain"],
     "mass": ["grams", "kilograms", "pounds", "ounces", "tonnes", "ton", "milligrams", "micrograms"],
     "temperature": ["celcius", "fahrenheit", "kelvin"],
@@ -12,4 +12,4 @@ module.exports = POPULAR_UNITS = {
     "time": ["seconds", "minutes", "hours", "days", "weeks"],
 }
 
-const PRE_SYMBOLS = new Set(["$", "₹", "€", "£", "¥", "Can$", "C$", "CA$", "A$", "AU$"])
+const PRE_SYMBOLS = new Set(["$", "₹", "€", "£", "¥", "Can$", "C$", "CA$", "A$", "AU$", "¥"])
