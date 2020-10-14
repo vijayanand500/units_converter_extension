@@ -1,7 +1,6 @@
 var assert = require("assert");
 
 const Time = require("../code/conversions/Time");
-const getPreciseNumber = require('../code/main_scripts/utility');
 
 describe('Time', function() {
     it("Conversions should not be empty", function() {
@@ -11,7 +10,9 @@ describe('Time', function() {
 
     it("Standard Conversions should not be empty", function () {
         let seconds = new Time("seconds", ["minutes", "hours", "days", "weeks"]);
-        assert.notStrictEqual(seconds.getAllConversions(20, 5), "");
+        assert.notStrictEqual(seconds.getAllConversions(-1, 5), "");
+        assert.notStrictEqual(seconds.getAllConversions(-1.5, 5), "");
+
     });
 
     it("Conversions should not be empty", function() {
@@ -22,6 +23,7 @@ describe('Time', function() {
     it("Standard Conversions should not be empty", function () {
         let minutes = new Time("minutes", ["seconds", "hours", "days", "weeks"]);
         assert.notStrictEqual(minutes.getAllConversions(10, 3), "");
+        assert.notStrictEqual(minutes.getAllConversions(-1, 3), "");
     });
 
     it("Conversions should not be empty", function() {
