@@ -218,4 +218,33 @@ describe("Mass", function () {
     ]);
     assert.notStrictEqual(tonss.getStandardConversion(1), "");
   });
+
+  it("Conversions should not be empty", function () {
+    let mass = new Mass("", [
+      "kilograms",
+      "grams",
+      "pound",
+      "tonne",
+      "milligrams",
+      "micrograms",
+      "ounces",
+      "tonss",
+    ]);
+    assert.notStrictEqual(mass.getAllConversions(49, 2), "");
+    assert.notStrictEqual(mass.getAllConversions(-49, 2), "");
+  });
+
+  it("Standard Conversions should not be empty", function () {
+    let mass = new Mass("", [
+      "kilograms",
+      "grams",
+      "pound",
+      "tonne",
+      "milligrams",
+      "micrograms",
+      "ounces",
+      "tonss",
+    ]);
+    assert.notStrictEqual(mass.getStandardConversion(1), "");
+  });
 });

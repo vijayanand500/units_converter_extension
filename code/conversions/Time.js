@@ -26,6 +26,7 @@ class Time {
 			case "hours": return quantity * (60 * 60);
 			case "days": return quantity * (24 * 60 * 60);
 			case "weeks": return quantity * (7 * 24 * 60 * 60);
+			default: return null;
 		}
 	}
 	/*From our standard conversion we try to convert into all the other units specified in arr property of this class

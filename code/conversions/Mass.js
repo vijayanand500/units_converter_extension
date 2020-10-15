@@ -36,7 +36,8 @@ class Mass {
 			case "milligrams": return quantity / 1000000;
 			case "micrograms": return quantity / 1000000000;
 			case "ounces": return quantity / 35.273962;
-			case "tonss": return quantity * 907.18474;
+            case "tonss": return quantity * 907.18474;
+            default: return null;
         }
     }
 

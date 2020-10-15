@@ -12,6 +12,7 @@ class Temperature {
             case "celcius": return quantity;
             case "kelvin": return quantity - 273.15;
             case "fahrenheit": return ((quantity - 32) / 9) * 5;
+            default: return null;
         }
     }
 

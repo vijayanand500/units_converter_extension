@@ -56,8 +56,13 @@ describe('Time', function() {
         assert.notStrictEqual(weeks.getAllConversions(25, 3), "");
     });
 
-    it("Should allowed null", function() {
-        let time = new Time();
-        assert.notStrictEqual(time, null);
+    it("Conversions should not be empty", function() {
+        let time = new Time("", ["seconds", "minutes", "hours", "days", "weeks"]);
+        assert.notStrictEqual(time.getStandardConversion(20), "");
+    });
+
+    it("Standard Conversions should not be empty", function () {
+        let time = new Time("", ["seconds", "minutes", "hours", "days", "weeks"]);
+        assert.notStrictEqual(time.getAllConversions(25, 3), "");
     });
 });
