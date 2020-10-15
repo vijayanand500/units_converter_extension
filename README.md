@@ -50,3 +50,12 @@ Click on the image below to preview the working of the extension<br/>
  - go to root of project and type `standard` if StandardJs is installed globally
  - go to root of project and type `npx standard` if StandardJs is installed locally 
  - Instead of installing it using npm, you can also use the extension available on VS Code
+
+## Test and Coverage
+- Unit Test
+  
+  We use [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
+
+- Code Coverage
+  
+  We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)

@@ -30,7 +30,7 @@ class Length {
             case "miles": return quantity * 1609.34;
             case "kilometers": return quantity * 1000;
             case "centimeters": return quantity / 100;
-            case "millimeter": return quantity / 1000;
+            case "millimeters": return quantity / 1000;
             case "yard": return quantity / 1.094;
             case "feet": return quantity / 3.281;
             case "inch": return quantity / 39.3701;

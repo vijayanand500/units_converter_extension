@@ -5,8 +5,25 @@ class Currency {
         this.arr = arr;
     }
 
+    getPrecision(number) {
+        let parts = number.toString().split(".");
+        if (parts.length <= 1) {
+            return number < 0 ? parts[0].length - 1 : parts[0].length;
+        }
+        let intlen = number < 0 ? parts[0].length - 1 : parts[0].length;
+        return intlen + parts[1].length;
+    }
+    
+    
+    getPreciseNumber(number, precision) {
+        return number.toPrecision(
+            Math.min(Math.max(this.getPrecision(number), precision), 10)
+        );
+    }
+
     //api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD
     getData(q) {
+        const fetch = require('node-fetch');
         return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
             .then(response => response.json())
             .then(data => data.rates)
@@ -72,55 +89,55 @@ class Currency {
         for (let i = 0; i < this.arr.length; i++) {
             switch (this.arr[i].toLowerCase()) {
                 case "usd":
-                    res += ",$ " + getPreciseNumber(quantity, precision);
+                    res += ",$ " + this.getPreciseNumber(quantity, precision);
                     break
                 case "eur":
                     factor = await this.getData('USD').then(function (d) {
                         return d['EUR']
                     })
-                    res += ",€ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",€ " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "gbp":
                     factor = await this.getData('USD').then(function (d) {
                         return d['GBP']
                     })
-                    res += ",£ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",£ " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "inr":
                     factor = await this.getData('USD').then(function (d) {
                         return d['INR']
                     })
-                    res += ",₹ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",₹ " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "jpy":
                     factor = await this.getData('USD').then(function (d) {
                         return d['JPY']
                     })
-                    res += ",¥ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",¥ " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "cad":
                     factor = await this.getData('USD').then(function (d) {
                         return d['CAD']
                     })
-                    res += ",C$ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",C$ " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "aud":
                     factor = await this.getData('USD').then(function (d) {
                         return d['AUD']
                     })
-                    res += ",AU$ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",AU$ " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "chf":
                     factor = await this.getData('USD').then(function (d) {
                         return d['CHF']
                     })
-                    res += ",Fr " + getPreciseNumber(factor * quantity, precision)
+                    res += ",Fr " + this.getPreciseNumber(factor * quantity, precision)
                     break
                 case "cny":
                     factor = await this.getData('USD').then(function (d) {
                         return d['CNY']
                     })
-                    res += ",¥ " + getPreciseNumber(factor * quantity, precision)
+                    res += ",¥ " + this.getPreciseNumber(factor * quantity, precision)
             }
         }
         return res
@@ -128,3 +145,4 @@ class Currency {
 
 
 }
+module.exports = Currency;
