@@ -71,13 +71,21 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 ## Test and Coverage
 
-- Unit Test
+### Unit Test
   
-  We use [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
+  - We use [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
+    
+  - Setup
+  
+    From the repository root, run: ```npm install --save-dev mocha chai```
+    
+    Then run: ```npm test [filename]```
+    
+    npm will then attempt to run all test files that end with ```*.test.js ```, if you do not specify filename.
 
-- Code Coverage
+### Code Coverage
   
-  We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
+  - We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
 
 ## Automated Analysis Tool
 
@@ -93,6 +101,10 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
   We generate our own docs [here]( https://ncsu-s.github.io/units_converter_extension/)
   
   The classes and the functions descriptions is in our pages.
+ 
+- Why:
+
+  Think about the case when you shopping on Amazon. When you want to purchase Dumbbells on the website, the weight unit is somewhat you are not familiar with. You will google search the conversion of two units. But now, we have units converter, helping you to covert the unit by a single select with the mouse.
   
 - Here is our feature model</br>
 
