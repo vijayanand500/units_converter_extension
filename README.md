@@ -59,3 +59,6 @@ Click on the image below to preview the working of the extension<br/>
 - Code Coverage
   
   We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
+
+## Documentation
+See more documentations here: [Units Converter Extension wiki](https://github.com/NCSU-S/units_converter_extension/wiki/Units-Converter-Extension-Documentation)
