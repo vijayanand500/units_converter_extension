@@ -43,7 +43,7 @@ Click on the image below to preview the working of the extension
 
 ## Software Requirements
 
-- Node.js 
+- Node.js
 - NPM
 
 ## Style Checker and Analyzer
