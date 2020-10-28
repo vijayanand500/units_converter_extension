@@ -85,7 +85,7 @@ class Currency {
     with a precision no more than 10*/
     async getAllConversions(quantity, precision) {
         let res = ""
-        let factor = 1
+        let factor
         for (let i = 0; i < this.arr.length; i++) {
             switch (this.arr[i].toLowerCase()) {
                 case "usd":

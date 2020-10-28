@@ -9,11 +9,6 @@
 
 const UNITS = [
     {
-        unit: "meters",
-        type: "length",
-        aliases: ["meter", "meters"]
-    },
-    {
         unit: "kilograms",
         type: "mass",
         aliases: ["kilograms", "kilogram", "kgs", "kg"]
@@ -187,6 +182,102 @@ const UNITS = [
         unit: "weeks",
         type: "time",
         aliases: ["week", "wks", "weeks"]
+    },
+    {
+        unit: "m2",
+        type: "area",
+        aliases: ["m2", " m2", "m²"]
+    },
+    {
+        unit: "cm2",
+        type: "area",
+        aliases: ["cm2", " cm2", "cm²"]
+    },
+    {
+        unit: "km2",
+        type: "area",
+        aliases: ["km2", " km2", "km²"]
+    },
+    {
+        unit: "miles2",
+        type: "area",
+        aliases: ["miles2", " miles2", "miles²"]
+    },
+    {
+        unit: "ft2",
+        type: "area",
+        aliases: ["ft2", " ft2", "ft²"]
+    },
+    {
+        unit: "in2",
+        type: "area",
+        aliases: ["in2", " in2", "in²"]
+    },
+    {
+        unit: "ha2",
+        type: "area",
+        aliases: ["ha2", " ha2", "ha²"]
+    },
+    {
+        unit: "acre2",
+        type: "area",
+        aliases: ["acre2", " acre2", "acre²"]
+    },
+    {
+        unit: "yd2",
+        type: "area",
+        aliases: ["yd2", " yd2", "yd²"]
+    },
+    {
+        unit: "b/s",
+        type: "dataTransfer",
+        aliases: ["b/s", " b", "bps"]
+    },
+    {
+        unit: "Kb/s",
+        type: "dataTransfer",
+        aliases: ["Kb/s", " Kb", "Kbps"]
+    },
+    {
+        unit: "Mb/s",
+        type: "dataTransfer",
+        aliases: ["Mb/s", " Mb", "Mbps"]
+    },
+    {
+        unit: "Gb/s",
+        type: "dataTransfer",
+        aliases: ["Gb/s", " Gb", "Gbps"]
+    },
+    {
+        unit: "Tb/s",
+        type: "dataTransfer",
+        aliases: ["Tb/s", " Tb", "Tbps"]
+    },
+    {
+        unit: "m/s",
+        type: "speed",
+        aliases: ["meters/s",
+                  "m/s",
+                  "meters per sec",
+                  "meters per second"]
+    },
+    {
+        unit: "Km/h",
+        type: "speed",
+        aliases: ["kilometers/h",
+                  "Km/h",
+                  "Kilometers per hour",
+                  "Kilometers per hour"]
+    },
+    {
+        unit: "mph",
+        type: "speed",
+        aliases: ["mph",
+                  "Mph",
+                  "mile/h",
+                  "Mile/h",
+                  "Miles per hour",
+                  "miles per hour"]
     }
 ]
 

@@ -31,7 +31,10 @@
         "code/conversions/Mass.js",
         "code/conversions/Currency.js",
         "code/conversions/Length.js",
-        "code/conversions/Time.js"
+        "code/conversions/Time.js",
+        "code/conversions/DataTransfer.js",
+        "code/conversions/Area.js",
+        "code/conversions/Speed.js"
       ]
     }
   ],

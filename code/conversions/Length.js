@@ -34,7 +34,7 @@ class Length {
             case "yard": return quantity / 1.094;
             case "feet": return quantity / 3.281;
             case "inch": return quantity / 39.3701;
-            case "furlong": quantity * 201 ;
+            case "furlong": return quantity * 201 ;
             case "chain": return quantity * 20.1168;
             default: return null;
         }
