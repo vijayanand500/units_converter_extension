@@ -81,7 +81,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 - [DeepScan](https://deepscan.io/dashboard/#view=project&tid=11517&pid=14425&bid=268342&prid=&subview=overview)
 
-![DeepScan](https://user-images.githubusercontent.com/5437711497388087-bd57f880-18ad-11eb-82ea-3eba7006e0d9.png)
+<img width="1427" alt="deepScan" src="https://user-images.githubusercontent.com/54377114/97389563-fe9dd780-18b0-11eb-8203-b1ea489175c1.png">
 
 ## Documentation
 
