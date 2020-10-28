@@ -97,37 +97,37 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 <img width="1427" alt="deepScan" src="https://user-images.githubusercontent.com/54377114/97389563-fe9dd780-18b0-11eb-8203-b1ea489175c1.png">
 
 ## Documentation
-- Using JSDoc to generate, click [here](https://github.com/jsdoc/jsdoc) for more information about JSDoc
+#### "What" and "How" Docs
 
-- What: 
+<div>
+<nav>
+    <h2><a href="https://ncsu-s.github.io/units_converter_extension/">JSDoc Generated Documentation</a></h2><h3>Classes</h3><ul><li><a href="https://ncsu-s.github.io/units_converter_extension/Area.html">Area</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/Currency.html">Currency</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/DataTransfer.html">DataTransfer</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/Length.html">Length</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/Mass.html">Mass</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/Speed.html">Speed</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/Temperature.html">Temperature</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/Time.html">Time</a></li></ul><h3>Global</h3><ul><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#descending_length">descending_length</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#get_conversion_class">get_conversion_class</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#get_conversions">get_conversions</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#get_possible_conversions_list">get_possible_conversions_list</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#getPreciseNumber">getPreciseNumber</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#getPrecision">getPrecision</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#matches_filter">matches_filter</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#POPULAR_UNITS">POPULAR_UNITS</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#showModal">showModal</a></li><li><a href="https://ncsu-s.github.io/units_converter_extension/global.html#UNITS">UNITS</a></li></ul>
+</nav>
+</div>
 
-  **We generate our own docs** [here]( https://ncsu-s.github.io/units_converter_extension/)
-  
-  The classes and the functions descriptions is in our pages.
- 
-- Why:
+#### "Why" and "Why not" Docs
 
-  Think about the case when you shopping on Amazon. When you want to purchase Dumbbells on the website, the weight unit is somewhat you are not familiar with. You will google search the conversion of two units. But now, we have units converter, helping you to covert the unit by a single select with the mouse.
-  
-- Here is our **feature model**</br>
+Think about the case when you shopping on Amazon. When you want to purchase Dumbbells on the website, the weight unit is somewhat you are not familiar with. You will google search the conversion of two units. But now, we have units converter, helping you to covert the unit by a single select with the mouse.
+
+#### Feature Model</br>
 
 ```xml
 <!--  This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) -->
 <feature_model name="Unit Converter Extension">
-    <feature_tree>
-        :r Unit Converter Extension(_r)
-            :m Length(_r_1)
-            :m Mass(_r_3)
-            :m Temperature(_r_4)
-            :m Time(_r_5)
-            :m Currency(_r_6)
-            :m Area(_r_7)
-            :m Datarate(_r_8)
-            :m Speed(_r_10)
+    <feature_tree> 
+        :r Unit Converter Extension(_r) 
+            :m Length(_r_1) 
+            :m Mass(_r_3) 
+            :m Temperature(_r_4) 
+            :m Time(_r_5) 
+            :m Currency(_r_6) 
+            :m Area(_r_7) 
+            :m Datarate(_r_8) 
+            :m Speed(_r_10) 
     </feature_tree>
-    <constraints>
-        constraint_1:_r_1 or _r_7
-        constraint_2:_r_1 or _r_5 or _r_10
+    <constraints> 
+        constraint_1:_r_1 or _r_7 
+        constraint_2:_r_1 or _r_5 or _r_10 
     </constraints>
 </feature_model>
 ```
