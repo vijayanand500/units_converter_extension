@@ -38,6 +38,9 @@ Before creating bug reports, please check if that bug is already reported as you
 
 Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). Create an issue on the repository and provide as much information as you can provide, like OS details, expected behaviour, etc.
 
+#### Our Pledge
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
 * **Use a clear and descriptive title** for the issue to identify the problem.
@@ -72,9 +75,18 @@ While the prerequisites above must be satisfied prior to having your pull reques
 
 * Use the present tense ("Add feature" not "Added feature")
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
-* When only changing documentation, include `[ci skip]` in the commit title
+
+### JavaScript Styleguide
+All JavaScript must adhere to [JavaScript Standard Style](https://standardjs.com/).
+
+### Documentation Styleguide
+Use [Markdown](https://daringfireball.net/projects/markdown/).
+
+## Our Responsibilities
+
+Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
    
  ## Attribution
  * This Contribution instructions were adapted from [Atom's Contributing.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
