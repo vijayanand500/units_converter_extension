@@ -86,8 +86,15 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 <img width="1427" alt="deepScan" src="https://user-images.githubusercontent.com/54377114/97389563-fe9dd780-18b0-11eb-8203-b1ea489175c1.png">
 
 ## Documentation
+- Using JSDoc to generate, click [here](https://github.com/jsdoc/jsdoc) for more information about JSDoc
 
-Here is our feature model</br>
+- What: 
+
+  We generate our own docs [here]( https://ncsu-s.github.io/units_converter_extension/)
+  
+  The classes and the functions descriptions is in our pages.
+  
+- Here is our feature model</br>
 
 ```xml
 <!--  This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) -->
