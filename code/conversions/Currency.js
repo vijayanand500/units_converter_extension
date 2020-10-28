@@ -13,8 +13,8 @@ class Currency {
         let intlen = number < 0 ? parts[0].length - 1 : parts[0].length;
         return intlen + parts[1].length;
     }
-    
-    
+
+
     getPreciseNumber(number, precision) {
         return number.toPrecision(
             Math.min(Math.max(this.getPrecision(number), precision), 10)
@@ -85,7 +85,7 @@ class Currency {
     with a precision no more than 10*/
     async getAllConversions(quantity, precision) {
         let res = ""
-        let factor = 1
+        let factor
         for (let i = 0; i < this.arr.length; i++) {
             switch (this.arr[i].toLowerCase()) {
                 case "usd":
