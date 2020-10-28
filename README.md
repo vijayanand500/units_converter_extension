@@ -21,7 +21,9 @@ Click on the image below to preview the working of the extension
 - Convert kilograms to pounds when you are buying food
 - Convert celcius to fahrenheit when you are talking about weather
 - Convert hours to seconds when you are calculating time
-
+- Convert celcius to Fahrenheit when you are calculating temperature
+- Convert Mb/s to b/s when you are calculating internet speed
+- Convert square meter to square feet when you are calculating the measure of area
 ## Installation
 
 - Clone the repository using ```git clone https://github.com/NCSU-S/units_converter_extension.git```
