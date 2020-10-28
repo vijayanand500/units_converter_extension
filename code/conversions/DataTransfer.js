@@ -21,16 +21,13 @@ class DataTransfer{
 
     getStandardConversion(quantity) {
         //We use a switch case to make appropriate conversion
-        let kbMulti = 1000;
-        let MbMulti = kbMulti * 1000;
-        let GbMulti = MbMulti * 1000;
-        let TbMulti = GbMulti * 1000;
+
         switch (this.unit.toLowerCase()) {
             case "b/s": return quantity;
-            case "Kb/s": return quantity * kbMulti;
-            case "Mb/s": return quantity * MbMulti;
-			case "Gb/s": return quantity * GbMulti;
-			case "Tb/s": return quantity * TbMulti;
+            case "kb/s": return quantity * 1000;
+            case "mb/s": return quantity * 1000000;
+			case "gb/s": return quantity * 1000000000;
+			case "tb/s": return quantity * 1000000000000;
             default: return null;
         }
     }
@@ -44,23 +41,23 @@ class DataTransfer{
                     res += "," +this.getPreciseNumber(quantity,precision) + " b/s";
                     break;
                 }
-                case "Kb/s": {
-                    let conv = quantity / 1609;
+                case "kb/s": {
+                    let conv = quantity / 1000;
                     res += "," + this.getPreciseNumber(conv, precision) + " Kb/s";
                     break;
                 }
-                case "Mb/s": {
-                    let conv = quantity / 1000;
+                case "mb/s": {
+                    let conv = quantity / 1000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Mb/s";
                     break;
                 }
-                case "Gb/s": {
-                    let conv = quantity * 100;
+                case "gb/s": {
+                    let conv = quantity / 1000000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Gb/s";
                     break;
                 }
-                case "Tb/s": {
-                    let conv = quantity * 1000;
+                case "tb/s": {
+                    let conv = quantity / 1000000000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Tb/s";
                     break;
                 }
