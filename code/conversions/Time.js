@@ -51,12 +51,12 @@ class Time {
 				}
 				case "days": {
 					let conv = quantity / (24 * 60 * 60);
-					res += ',' + this.getPreciseNumber(conv, precision) + " days";	
+					res += ',' + this.getPreciseNumber(conv, precision) + " days";
 					break;
 				}
 				case "weeks": {
 					let conv = quantity / (7 * 24 * 60 * 60);
-					res += ',' + this.getPreciseNumber(conv, precision) + " days";	
+					res += ',' + this.getPreciseNumber(conv, precision) + " days";
 					break;
 				}
 			}

@@ -45,22 +45,22 @@ class DataTransfer{
                     break;
                 }
                 case "Kb/s": {
-                    let conv = quantity / 1609;
+                    let conv = quantity / 1000;
                     res += "," + this.getPreciseNumber(conv, precision) + " Kb/s";
                     break;
                 }
                 case "Mb/s": {
-                    let conv = quantity / 1000;
+                    let conv = quantity / 1000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Mb/s";
                     break;
                 }
                 case "Gb/s": {
-                    let conv = quantity * 100;
+                    let conv = quantity * 1000000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Gb/s";
                     break;
                 }
                 case "Tb/s": {
-                    let conv = quantity * 1000;
+                    let conv = quantity * 1000000000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Tb/s";
                     break;
                 }
