@@ -10,19 +10,21 @@ An extension that converts your selected values into popular units. Saves time, 
 ![Coveralls github](https://img.shields.io/coveralls/github/NCSU-S/units_converter_extension)
 [![DOI](https://zenodo.org/badge/300009632.svg)](https://zenodo.org/badge/latestdoi/300009632)
 
-Click on the image below to preview the working of the extension<br/>
+Click on the image below to preview the working of the extension
+
 [![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
 
 ## Use Cases
+
 - Convert $ to ¥ when you are shopping abroad
 - Convert kilometers to miles when you are planning routes before driving
 - Convert kilograms to pounds when you are buying food
 - Convert celcius to fahrenheit when you are talking about weather
 - Convert hours to seconds when you are calculating time
 
-## Installation 
+## Installation
 
-- Clone the repository using ```git clone https://github.com/bhavesh242/units_converter_extension```
+- Clone the repository using ```git clone https://github.com/NCSU-S/units_converter_extension.git```
 - In the chrome browser open ```chrome://extensions/```
 - Enable developer settings if it is not enabled
 - Choose Load Unpacked
@@ -34,24 +36,31 @@ Click on the image below to preview the working of the extension<br/>
 ![image](https://github.com/bhavesh242/units_converter_extension/blob/master/assets/Images/Example.PNG)
 
 ## Languages
+
 - JavaScript
-- HTML 
+- HTML
 - CSS
+
 ## Software Requirements
+
 - Node.js 
 - NPM
-## Style Checker and Analyzer
-### Standard Js 
-<b>Installation</b>
-- `npm install standard --global` in comand line interface to install globally
-- `npm install standard --save-dev` in command line interface to install locally 
 
- <b>Running Standard Js</b> 
- - go to root of project and type `standard` if StandardJs is installed globally
- - go to root of project and type `npx standard` if StandardJs is installed locally 
- - Instead of installing it using npm, you can also use the extension available on VS Code
+## Style Checker and Analyzer
+
+### Standard Js
+
+Installation</b>
+`npm install standard --global` in comand line interface to install globally
+`npm install standard --save-dev` in command line interface to install locally
+
+Running Standard Js</b>
+go to root of project and type `standard` if StandardJs is installed globally
+go to root of project and type `npx standard` if StandardJs is installed locally
+Instead of installing it using npm, you can also use the extension available on VS Code
 
 ## Test and Coverage
+
 - Unit Test
   
   We use [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
@@ -61,4 +70,5 @@ Click on the image below to preview the working of the extension<br/>
   We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
 
 ## Documentation
+
 See more documentations here: [Units Converter Extension wiki](https://github.com/NCSU-S/units_converter_extension/wiki/Units-Converter-Extension-Documentation)
