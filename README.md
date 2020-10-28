@@ -11,7 +11,7 @@ An extension that converts your selected values into popular units. Saves time, 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/NCSU-S/units_converter_extension)
 [![DOI](https://zenodo.org/badge/300009632.svg)](https://zenodo.org/badge/latestdoi/300009632)
 
-Click on the image below to preview the working of the extension
+**Click on the image below to view the video**
 
 [![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://youtu.be/rO0-Wf07vk0)
 
