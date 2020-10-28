@@ -59,6 +59,14 @@ go to root of project and type `standard` if StandardJs is installed globally
 go to root of project and type `npx standard` if StandardJs is installed locally
 Instead of installing it using npm, you can also use the extension available on VS Code
 
+## IDE & Code Fomatter
+
+- IDE: [VSCode](https://code.visualstudio.com/)
+
+- Code Formatter: [beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+
+VS Code uses js-beautify internally, but it lacks the ability to modify the style you wish to use. This extension enables running js-beautify in VS Code, AND honouring any .jsbeautifyrc file in the open file's path tree to load your code styling. Run with F1 Beautify (to beautify a selection) or F1 Beautify file.
+
 ## Test and Coverage
 
 - Unit Test
