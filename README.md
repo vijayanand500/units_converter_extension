@@ -76,7 +76,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 ### Unit Test
   
-  - We use [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
+  - [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
     
   - Setup
   
@@ -88,7 +88,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 ### Code Coverage
   
-  - We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
+  - [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
 
 ## Automated Analysis Tool
 
