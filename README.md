@@ -101,7 +101,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 - What: 
 
-  **We generate our own docs [here]**( https://ncsu-s.github.io/units_converter_extension/)
+  **We generate our own docs** [here]( https://ncsu-s.github.io/units_converter_extension/)
   
   The classes and the functions descriptions is in our pages.
  
