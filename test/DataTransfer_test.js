@@ -4,6 +4,11 @@ const Data = require("../code/conversions/DataTransfer");
 
 describe('DataTransfer', function() {
     it("Conversions should not be empty", function() {
+        let test = new Data("", ["kb/s", "mb/s", "gb/s", "tb/s"]);
+        assert.notStrictEqual(test.getStandardConversion(30), "");
+    });
+
+    it("Conversions should not be empty", function() {
         let bs = new Data("b/s", ["kb/s", "mb/s", "gb/s", "tb/s"]);
         assert.notStrictEqual(bs.getStandardConversion(30), "");
     });
@@ -26,12 +31,12 @@ describe('DataTransfer', function() {
     });
 
     it("Conversions should not be empty", function() {
-        let mbs = new Data("gb/s", ["b/s", "kb/s", "gb/s", "tb/s"]);
+        let mbs = new Data("mb/s", ["b/s", "kb/s", "gb/s", "tb/s"]);
         assert.notStrictEqual(mbs.getStandardConversion(20), "");
     });
 
     it("Standard Conversions should not be empty", function () {
-        let mbs = new Data("gb/s", ["b/s", "kb/s", "gb/s", "tb/s"]);
+        let mbs = new Data("mb/s", ["b/s", "kb/s", "gb/s", "tb/s"]);
         assert.notStrictEqual(mbs.getAllConversions(10, 2), "");
         assert.notStrictEqual(mbs.getAllConversions(5, 10), "");
     });
@@ -48,12 +53,12 @@ describe('DataTransfer', function() {
     });
 
     it("Conversions should not be empty", function() {
-        let tbs = new Data("gb/s", ["b/s", "mb/s", "kb/s", "gb/s"]);
+        let tbs = new Data("tb/s", ["b/s", "mb/s", "kb/s", "gb/s"]);
         assert.notStrictEqual(tbs.getStandardConversion(20), "");
     });
 
     it("Standard Conversions should not be empty", function () {
-        let tbs = new Data("gb/s", ["b/s", "mb/s", "kb/s", "gb/s"]);
+        let tbs = new Data("tb/s", ["b/s", "mb/s", "kb/s", "gb/s"]);
         assert.notStrictEqual(tbs.getAllConversions(10, 2), "");
         assert.notStrictEqual(tbs.getAllConversions(5, 10), "");
     });
