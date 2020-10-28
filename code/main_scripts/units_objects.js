@@ -186,47 +186,47 @@ const UNITS = [
     {
         unit: "m2",
         type: "area",
-        aliases: ["m2", " m2", "m²"]
+        aliases: ["m2", " m2", "m²", "sqm"]
     },
     {
         unit: "cm2",
         type: "area",
-        aliases: ["cm2", " cm2", "cm²"]
+        aliases: ["cm2", " cm2", "cm²", "sqcm"]
     },
     {
         unit: "km2",
         type: "area",
-        aliases: ["km2", " km2", "km²"]
+        aliases: ["km2", " km2", "km²", "sqkm"]
     },
     {
         unit: "miles2",
         type: "area",
-        aliases: ["miles2", " miles2", "miles²"]
+        aliases: ["miles2", " miles2", "miles²", "sqmiles"]
     },
     {
         unit: "ft2",
         type: "area",
-        aliases: ["ft2", " ft2", "ft²"]
+        aliases: ["ft2", " ft2", "ft²", " sqft"]
     },
     {
         unit: "in2",
         type: "area",
-        aliases: ["in2", " in2", "in²"]
+        aliases: ["in2", " in2", "in²", "sqin"]
     },
     {
         unit: "ha2",
         type: "area",
-        aliases: ["ha2", " ha2", "ha²"]
+        aliases: ["ha2", " ha2", "ha²", "sqha"]
     },
     {
         unit: "acre2",
         type: "area",
-        aliases: ["acre2", " acre2", "acre²"]
+        aliases: ["acre2", " acre2", "acre²", "sqacre"]
     },
     {
         unit: "yd2",
         type: "area",
-        aliases: ["yd2", " yd2", "yd²"]
+        aliases: ["yd2", " yd2", "yd²", "sqyd"]
     },
     {
         unit: "b/s",

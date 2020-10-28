@@ -43,11 +43,18 @@ class Currency {
      * @returns conversion rate for a given query q
      */
     getData(q) {
-        const fetch = require('node-fetch');
-        return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
-            .then(response => response.json())
-            .then(data => data.rates)
+        if (typeof fetch !== 'function') {
+            let fetch = require('node-fetch');
+            return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
+                .then(response => response.json())
+                .then(data => data.rates);
+        } else {
+            return fetch('https://api.exchangeratesapi.io/latest?base=' + q)
+                .then(response => response.json())
+                .then(data => data.rates);
+        }
     }
+
 
     /**
      * Our standard conversion is USD, so we try to convert all selection to USD
