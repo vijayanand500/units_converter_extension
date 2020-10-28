@@ -13,7 +13,7 @@ An extension that converts your selected values into popular units. Saves time, 
 
 Click on the image below to preview the working of the extension
 
-[![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://www.youtube.com/watch?v=W4USPH2sBJw&ab_channel=BhaveshAgrawal)
+[![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://youtu.be/rO0-Wf07vk0)
 
 ## Use Cases
 
