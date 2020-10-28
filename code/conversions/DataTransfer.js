@@ -41,55 +41,23 @@ class DataTransfer{
                     res += "," +this.getPreciseNumber(quantity,precision) + " b/s";
                     break;
                 }
-<<<<<<< HEAD
-                case "Kb/s": {
-                    let conv = quantity / 1000;
-||||||| merged common ancestors
-                case "Kb/s": {
-                    let conv = quantity / 1609;
-=======
                 case "kb/s": {
                     let conv = quantity / 1000;
->>>>>>> 64cf373e257618dbaeb0358ce3ba85baa6ff4535
                     res += "," + this.getPreciseNumber(conv, precision) + " Kb/s";
                     break;
                 }
-<<<<<<< HEAD
-                case "Mb/s": {
-                    let conv = quantity / 1000000;
-||||||| merged common ancestors
-                case "Mb/s": {
-                    let conv = quantity / 1000;
-=======
                 case "mb/s": {
                     let conv = quantity / 1000000;
->>>>>>> 64cf373e257618dbaeb0358ce3ba85baa6ff4535
                     res += ","+ this.getPreciseNumber(conv, precision) + " Mb/s";
                     break;
                 }
-<<<<<<< HEAD
-                case "Gb/s": {
-                    let conv = quantity * 1000000000;
-||||||| merged common ancestors
-                case "Gb/s": {
-                    let conv = quantity * 100;
-=======
                 case "gb/s": {
-                    let conv = quantity / 1000000000;
->>>>>>> 64cf373e257618dbaeb0358ce3ba85baa6ff4535
+                    let conv = quantity * 1000000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Gb/s";
                     break;
                 }
-<<<<<<< HEAD
-                case "Tb/s": {
-                    let conv = quantity * 1000000000000;
-||||||| merged common ancestors
-                case "Tb/s": {
-                    let conv = quantity * 1000;
-=======
                 case "tb/s": {
-                    let conv = quantity / 1000000000000;
->>>>>>> 64cf373e257618dbaeb0358ce3ba85baa6ff4535
+                    let conv = quantity * 1000000000000;
                     res += ","+ this.getPreciseNumber(conv, precision) + " Tb/s";
                     break;
                 }
