@@ -1,3 +1,9 @@
+/**
+ * @async
+ * @function get_conversions
+ * @param {Object} selection 
+ * @returns results of conversions
+ */
 async function get_conversions(selection) {
     //Regular expression to match the numerical part and optional space
     const numSpace_RE = new RegExp(/((^[\-−]?(?:\d+|\d{1,3}(?:,\d{3})+)(?:(\.|,)\d+)?))\s*/);
@@ -10,9 +16,8 @@ async function get_conversions(selection) {
             if (PRE_SYMBOLS.has(aliases[i])) {
                 let s = '((^' + '\\' + aliases[i] + '\\s*[\\-−]?(?:\\d+|\\d{1,3}(?:,\\d{3})+)(?:(\\.|,)\\d+)?))\\s*'
                 measure_RE = RegExp(s, "i");
-            }
-            else {
-                measure_RE = RegExp(numSpace_RE.source + aliases[i] +"$", "i");
+            } else {
+                measure_RE = RegExp(numSpace_RE.source + aliases[i] + "$", "i");
             }
             // console.log(measure_RE)
             var matches = selection.match(measure_RE);
@@ -27,13 +32,12 @@ async function get_conversions(selection) {
                 let conversion_class = get_conversion_class(unitObject.type, unitObject.unit);
                 // console.log(conversion_class)
                 if (unitObject.type == "currency") {
-                result= (async () => {
-                    let std_converison = await conversion_class.getStandardConversion(quantity, precision)
-                    return await conversion_class.getAllConversions(Number(std_converison), precision);
-                })();
-                // console.log(result)
-                }
-                else {
+                    result = (async () => {
+                        let std_converison = await conversion_class.getStandardConversion(quantity, precision)
+                        return await conversion_class.getAllConversions(Number(std_converison), precision);
+                    })();
+                    // console.log(result)
+                } else {
                     let std_converison = conversion_class.getStandardConversion(quantity, precision)
                     result = conversion_class.getAllConversions(Number(std_converison), precision);
                 }
