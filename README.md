@@ -63,7 +63,9 @@ Instead of installing it using npm, you can also use the extension available on 
 
 - IDE: [VSCode](https://code.visualstudio.com/)
 
-- Code Formatter: [beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+- Code Style Formatter: [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+
+- Code Syntax Checker : [Eslint](https://https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for Vscode plugin.
 
 VS Code uses js-beautify internally, but it lacks the ability to modify the style you wish to use. This extension enables running js-beautify in VS Code, AND honouring any .jsbeautifyrc file in the open file's path tree to load your code styling. Run with F1 Beautify (to beautify a selection) or F1 Beautify file.
 
