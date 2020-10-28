@@ -8,6 +8,7 @@ An extension that converts your selected values into popular units. Saves time, 
 ![GitHub contributors](https://img.shields.io/github/contributors/NCSU-S/units_converter_extension)
 [![Build Status](https://travis-ci.com/NCSU-S/units_converter_extension.svg?branch=master)](https://travis-ci.com/NCSU-S/units_converter_extension)
 ![Coveralls github](https://img.shields.io/coveralls/github/NCSU-S/units_converter_extension)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/NCSU-S/units_converter_extension)
 [![DOI](https://zenodo.org/badge/300009632.svg)](https://zenodo.org/badge/latestdoi/300009632)
 
 Click on the image below to preview the working of the extension
@@ -61,9 +62,9 @@ go to root of project and type `standard` if StandardJs is installed globally
 go to root of project and type `npx standard` if StandardJs is installed locally
 Instead of installing it using npm, you can also use the extension available on VS Code
 
-## IDE & Code Fomatter
+## IDE and Code Fomatter
 
-- IDE: [VSCode](https://code.visualstudio.com/)
+- IDE and Style Checker: [VSCode](https://code.visualstudio.com/)
 
 - Code Style Formatter: [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
@@ -100,7 +101,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 - What: 
 
-  We generate our own docs [here]( https://ncsu-s.github.io/units_converter_extension/)
+  **We generate our own docs [here]**( https://ncsu-s.github.io/units_converter_extension/)
   
   The classes and the functions descriptions is in our pages.
  
@@ -108,7 +109,7 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
   Think about the case when you shopping on Amazon. When you want to purchase Dumbbells on the website, the weight unit is somewhat you are not familiar with. You will google search the conversion of two units. But now, we have units converter, helping you to covert the unit by a single select with the mouse.
   
-- Here is our feature model</br>
+- Here is our **feature model**</br>
 
 ```xml
 <!--  This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) -->
@@ -132,5 +133,3 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 ```
 
 ![feature_model](https://user-images.githubusercontent.com/54377114/97375975-8f18ef80-1892-11eb-9f56-aad931853218.png)
-
-See more documentations here: [Units Converter Extension wiki](https://github.com/NCSU-S/units_converter_extension/wiki/Units-Converter-Extension-Documentation)
