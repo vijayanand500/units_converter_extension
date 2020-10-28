@@ -22,7 +22,7 @@ describe('Speed', function() {
     it("Standard Conversions should not be empty", function () {
         let kmh = new Speed("km/h", ["m/s", "mph"]);
         assert.notStrictEqual(kmh.getAllConversions(10, 3), "");
-        assert.notStrictEqual(kmh.getAllConversions(5, 3), "");
+        assert.notStrictEqual(kmh.getAllConversions(-1, 3), "");
     });
 
     it("Conversions should not be empty", function() {
