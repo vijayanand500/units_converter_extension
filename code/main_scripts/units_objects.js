@@ -253,6 +253,32 @@ const UNITS = [
         type: "dataTransfer",
         aliases: ["Tb/s", " Tb", "Tbps"]
     },
+    {
+        unit: "m/s",
+        type: "speed",
+        aliases: ["meters/s",
+                  "m/s",
+                  "meters per sec",
+                  "meters per second"]
+    },
+    {
+        unit: "Km/h",
+        type: "speed",
+        aliases: ["kilometers/h",
+                  "Km/h",
+                  "Kilometers per hour",
+                  "Kilometers per hour"]
+    },
+    {
+        unit: "mph",
+        type: "speed",
+        aliases: ["mph",
+                  "Mph",
+                  "mile/h",
+                  "Mile/h",
+                  "Miles per hour",
+                  "miles per hour"]
+    }
 ]
 
 

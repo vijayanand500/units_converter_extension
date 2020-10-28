@@ -44,7 +44,10 @@ function get_conversion_class(type, unit) {
     else if (type == "area"){
         return new Area(unit, get_possible_conversions_list(type, unit));
     }
-    
+    else if (type == "speed"){
+        return new Speed(unit, get_possible_conversions_list(type, unit));
+    }
+
 }
 
 //Get a number's precision
