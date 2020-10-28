@@ -77,6 +77,12 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
   
   We use [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
 
+## Automated Analysis Tool
+
+- [DeepScan](https://deepscan.io/dashboard/#view=project&tid=11517&pid=14425&bid=268342&prid=&subview=overview)
+
+  <img width="1427" alt="deepScan" src="https://user-images.githubusercontent.com/54377114/97388087-bd57f880-18ad-11eb-82ea-3eba7006e0d9.png">
+
 ## Documentation
 
 See more documentations here: [Units Converter Extension wiki](https://github.com/NCSU-S/units_converter_extension/wiki/Units-Converter-Extension-Documentation)
