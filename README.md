@@ -79,4 +79,29 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 ## Documentation
 
+Here is our feature model</br>
+
+```xml
+<!--  This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) -->
+<feature_model name="Unit Converter Extension">
+    <feature_tree>
+        :r Unit Converter Extension(_r)
+            :m Length(_r_1)
+            :m Mass(_r_3)
+            :m Temperature(_r_4)
+            :m Time(_r_5)
+            :m Currency(_r_6)
+            :m Area(_r_7)
+            :m Datarate(_r_8)
+            :m Speed(_r_10)
+    </feature_tree>
+    <constraints>
+        constraint_1:_r_1 or _r_7
+        constraint_2:_r_1 or _r_5 or _r_10
+    </constraints>
+</feature_model>
+```
+
+![feature_model](https://user-images.githubusercontent.com/54377114/97375975-8f18ef80-1892-11eb-9f56-aad931853218.png)
+
 See more documentations here: [Units Converter Extension wiki](https://github.com/NCSU-S/units_converter_extension/wiki/Units-Converter-Extension-Documentation)
