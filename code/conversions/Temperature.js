@@ -85,4 +85,4 @@ class Temperature {
     }
 }
 
-module.exports = Temperature;
+module.exports = { Temperature };
