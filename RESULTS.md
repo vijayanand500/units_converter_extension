@@ -17,12 +17,36 @@ Real time observations [sheet] - https://tinyurl.com/yy4x5bdm
 ## Observations
 
 <p align="center">
-	<img src="img1.jpeg">
-	<img src="img2.jpeg">
-	<img src="img3.jpeg">
-	<img src="img4.jpeg">
-	<img src="avg_time.jpg">
-	<img src="debug.png">
+	<img src="im1.png">
+	The bar chart above shows that the volunteers found it considerably easy to use the extension.
+</p>
+<p align="center">
+	<img src="img2.png">
+	From the above graph we can see that the ‘currency’ conversion was the most used conversion among other unit conversions. This has nothing to do with the fact that the metric had more number of useful standards of conversion since all the metrics had 9 different standards to convert to. So, from this survey we can gather that some metrics being more popularly used than others, could have more number of conversion standards to display as a future update.
+
+</p>
+<p align="center">
+	<img src="img3.png">
+	Based on the observations we notice that our conversion extension is more preferred than the Unit Converter 0.0.0.5. Some of the popular reasons why, include:
+- Easy to use and intuitive
+- Hover over feature makes it easier and faster to use
+
+</p>
+<p align="center">
+	<img src="img4.png">
+	We can see that our unit conversion extension is more preferred than the 
+‘Everything Metric’. Some of the popular reasons why, include:
+- Many options
+- Did not modify the webpage as such. Gave a drop down which is dynamic.
+
+<p align="center">
+	<img src="img6.png">
+	Though many people have given good ratings for the converter extension, we received some information about things to improve in the project.
+Some of the popular ones include:
+- Copy paste functionality was not present from the drop down and can be added. (50% stated this feature)
+- Its confuses pounds of weight and currency
+- Although the whole text changing is convenient, customization about the number of units to display and what units to display could have been improved.
+
 </p>
 
 
