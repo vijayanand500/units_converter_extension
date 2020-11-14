@@ -4,9 +4,13 @@ We started off signing up 10 colleagues who volunteered to perform tests on this
 ## Materials
 
 Example 1 -  Unit Converter https://chrome.google.com/webstore/detail/unit-converter/igjeajmonjofckmiheidpmebpmdbbiam/related?hl=en
+
 Example 2  - Everything Metric https://chrome.google.com/webstore/detail/everything-metric-auto-un/hknjpaididhfgeocegbacehlnkofjoni?hl=en 
+
 Github Repository -https://tinyurl.com/y6s8gaqq
-Experiment Survey - https://forms.gle/XxH6V9LWGFXZN2Px5     
+
+Experiment Survey - https://forms.gle/XxH6V9LWGFXZN2Px5 
+
 Real time observations [sheet] - https://tinyurl.com/yy4x5bdm
 
 
@@ -25,9 +29,9 @@ Real time observations [sheet] - https://tinyurl.com/yy4x5bdm
 
 ## Conclusions
 
--We can conclude that the extension that we tested is better than any other existing extension. Our participants also agreed that they would like to use this extension after this experiment as well.
--Example 1, a very similar implementation, involved taking manual input from the user for every conversion. This clearly proved to be an inconvenient method in comparison to ours.
--Example 2, kind of implements the opposite idea of our project, where the user need not ask for the output conversion by hovering over the input, but automatically converts and displays the webpage with metrics converted into a particular type of standard. While this is useful, most people still prefered our extension, because the user might want to see different standards of the metric at the same time and not require other conversions.   
+- We can conclude that the extension that we tested is better than any other existing extension. Our participants also agreed that they would like to use this extension after this experiment as well.
+- Example 1, a very similar implementation, involved taking manual input from the user for every conversion. This clearly proved to be an inconvenient method in comparison to ours.
+- Example 2, kind of implements the opposite idea of our project, where the user need not ask for the output conversion by hovering over the input, but automatically converts and displays the webpage with metrics converted into a particular type of standard. While this is useful, most people still prefered our extension, because the user might want to see different standards of the metric at the same time and not require other conversions.   
 
 
 ## Threat to Validity
